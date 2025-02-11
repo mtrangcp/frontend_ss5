@@ -14,9 +14,11 @@
         padding: 10px;
         margin: 10px;
         width: 400px;
+        border-radius: 4px;
       }
       h3 {
         margin-bottom: 10px;
+        margin-top: 10px;
       }
       .name,
       .ctry-sta,
@@ -26,8 +28,25 @@
         justify-content: space-between;
         width: 100%;
       }
+      .div-1 {
+        margin-bottom: 13px;
+      }
       .div-2 {
         width: 50%;
+      }
+      .ship {
+        margin-top: 10px;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+      button {
+        width: 100%;
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -35,9 +54,10 @@
     <div class="container">
       <form action="#">
         <h3>Billing address</h3>
-        <div class="name">
+        <div class="div-1 name">
           <div class="div-2">
-            <label for="firstName">First name</label> <br />
+            <label for="firstName">First name</label>
+            <br />
             <input type="text" name="firstName" id="firstName" />
           </div>
           <div class="div-2">
@@ -46,7 +66,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="div-1">
           <label for="username">Username</label>
           <div>
             <span>@</span>
@@ -54,8 +74,9 @@
           </div>
         </div>
 
-        <div>
-          <label for="email">Email &#10088;Optional&#10089;</label> <br />
+        <div class="div-1">
+          <label for="email">Email &#10088;Optional&#10089;</label>
+          <br />
           <input
             type="email"
             name="email"
@@ -64,7 +85,7 @@
           />
         </div>
 
-        <div>
+        <div class="div-1">
           <label for="address">Address</label> <br />
           <input
             type="text"
@@ -74,7 +95,7 @@
           />
         </div>
 
-        <div>
+        <div class="div-1">
           <label for="address2">Address 2 &#10088;Optional&#10089;</label>
           <br />
           <input
@@ -85,7 +106,7 @@
           />
         </div>
 
-        <div class="ctry-sta">
+        <div class="div-1 ctry-sta">
           <div>
             <label for="country">Country</label> <br />
             <select name="country" id="country">
@@ -114,7 +135,7 @@
         </div>
 
         <hr />
-        <div class="ship">
+        <div class="div-1 ship">
           <input type="checkbox" id="shipping" />
           <label for="shipping"
             >Shipping address is the same as my billing address</label
@@ -125,7 +146,7 @@
         </div>
         <hr />
 
-        <div>
+        <div class="div-1">
           <h3>Payment</h3>
           <input type="radio" name="payment" id="credit-card" />
           <label for="credit-card">Credit card</label> <br />
@@ -135,30 +156,32 @@
           <label for="PayPal">PayPal</label> <br />
         </div>
 
-        <div class="card">
-          <div>
+        <div class="div-1 card">
+          <div class="div-2">
             <label for="name-card">Name on card</label> <br />
             <input type="text" name="name-card" id="name-card" />
-            <p>Full name as displayed on card</p>
+            <p style="font-size: 11px; color: rgb(123, 122, 122)">
+              Full name as displayed on card
+            </p>
           </div>
-          <div>
+          <div class="div-2">
             <label for="number-card">Credit card number</label><br />
             <input type="text" name="number-card" id="number-card" />
           </div>
         </div>
 
-        <div class="exp-cvv">
-          <div>
+        <div class="div-1 exp-cvv">
+          <div class="div-2">
             <label for="exp">Expiration</label> <br />
             <input type="text" name="exp" id="exp" />
           </div>
-          <div>
+          <div class="div-2">
             <label for="cvv">CVV</label><br />
             <input type="text" name="cvv" id="cvv" />
           </div>
         </div>
         <hr />
-        <div class="btn">
+        <div class="div-1 btn">
           <button>Continue to checkout</button>
         </div>
       </form>
